@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dog Name Generator</title>
+		<link rel="stylesheet" type="text/css" href="assets/dog_names.css">
+		<script type="text/javascript" src="assets/libs/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/libs/bootstrap.min.css">
+	</head>
+	<body>
+		<h1 class="text-center">Dog Name Generator</h1>
+		<p class="text-center hide">
+			Dog name: <br/>
+			<span class='text-primary display-3' id="dogNameResult"></span>
+		</p>
+		<div class="jumbotron container1" id="question1">
+			<h3 class="text-center" id='questionDisplay'></h3>
+				<div class='row'>
+					<div class='col-md-4 col-xs-12'>
+			 			<button class="btn btn-default" type="button" value="1"></button>
+					 </div>
+					 <div class='col-md-4 col-xs-12'>
+						 <button class="btn btn-default" type="button" value="2"></button>
+					</div>
+					 <div class='col-md-4 col-xs-12'>
+						 <button class="btn btn-default" type="button" value="3"></button>
+					</div>
+				</div>
+		</div>
+		<div class="hide" id="generateAgain">
+			<div class='text-center'>
+				<button id='generateButton' class='btn btn-success' type="button">Generate another dog name</button>
+			</div>
+		</div>
+	<script type="text/javascript" src="assets/dogNameData.js"></script>
+	<script type="text/javascript" src="assets/dog_names.js"></script>
+	</body>
+</html>
