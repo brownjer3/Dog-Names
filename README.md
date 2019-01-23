@@ -15,3 +15,7 @@ Specs
 - minimal design
 - score keeper to designate dog name
 - create library of dog names
+
+
+
+THIS IS A HUGE CHANGE IM MAKING!!!!!!!!!!!!!!!!
