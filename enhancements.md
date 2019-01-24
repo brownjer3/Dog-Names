@@ -1,8 +1,9 @@
 enhancements
 
-- ability to have different amount of answers
 - make it pure js - ($(this))
 - uppercase the first letter in the dog name
+- ability to have different amount of answers
+
 
 git
 - git init (how to start git in the project)

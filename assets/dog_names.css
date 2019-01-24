@@ -1,7 +1,6 @@
 body {
 	text-align: center;
 	font-family: roboto;
-/*	background-color: #e16156;*/
 }
 
 h1 {
@@ -53,8 +52,4 @@ h3 {
 
 .hide {
 	display: none;
-}
-
-#dogNameResult {
-	
 }
