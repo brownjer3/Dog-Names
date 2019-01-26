@@ -1,13 +1,13 @@
-let questionDisplay = document.querySelector('h3');
-let answerButtons = document.querySelectorAll('.btn-default');
-let dogNameDisplay = document.querySelector('p');
-let surveyDisplay = document.querySelector('.jumbotron');
-let generateAgain = document.querySelector('#generateAgain');
-let generateButton = document.querySelector('#generateButton');
-let dogNameResult = document.querySelector('#dogNameResult');
+const questionDisplay = document.querySelector('h3');
+const answerButtons = document.querySelectorAll('.btn-default');
+const dogNameDisplay = document.querySelector('p');
+const surveyDisplay = document.querySelector('.jumbotron');
+const generateAgain = document.querySelector('#generateAgain');
+const generateButton = document.querySelector('#generateButton');
+const dogNameResult = document.querySelector('#dogNameResult');
 
 let questionPosition = 0;
-let dogName = "";
+let dogName;
 let dogStats = {};
 
 init();
@@ -51,7 +51,7 @@ function newAnswers() {
 
 function trackDogStats(clickedButton) {
 	let val = clickedButton.val();
-
+	
 // I can do a ton to simplify this - (hint: the value is a string by default, i think i'm doing extra work to turn it into a number)
 // potentially a switch statement or Object.keys
 	if (questionPosition === 0) {
