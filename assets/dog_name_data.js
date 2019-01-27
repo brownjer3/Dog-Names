@@ -16,131 +16,131 @@ let quiz = [
 
 let dogNameList = [
     {
-		name: "siggy",
-		gender: ["boy", "neutral"],
-		group: ["dogs", "cats", "humans"],
-		activity: ["running", "mysteries"],
-		description: ["energetic", "hungry"]
+		name: "Siggy",
+		gender: ["Boy", "Who Cares?"],
+		group: ["A group of dogs", "A group of cats", "A group of humans"],
+		activity: ["Running endlessly", "Solving mysteries"],
+		desc: ["Energetic", "Hungry"]
 	},{
-		name: "fireball",
-		gender: ["boy", "neutral"],
-		group: ["dogs", "cats"],
-		activity: ["running", "mysteries"],
-		description: ["energetic", "hungry", "diva"]
+		name: "Fireball",
+		gender: ["Boy", "Who Cares?"],
+		group: ["A group of dogs", "A group of cats"],
+		activity: ["Running endlessly", "Solving mysteries"],
+		desc: ["Energetic", "Hungry", "Diva"]
 	},{
-		name: "tiny",
-		gender: ["boy", "girl", "neutral"],
-		group: ["dogs", "cats"],
-		activity: ["sleeping"],
-		description: ["energetic", "diva"]
+		name: "Tiny",
+		gender: ["Boy", "Girl", "Who Cares?"],
+		group: ["A group of dogs", "A group of cats"],
+		activity: ["Sleeping/cuddling"],
+		desc: ["Energetic", "Diva"]
 	},{
-		name: "beans",
-		gender: ["boy", "neutral"],
-		group: ["dogs", "humans"],
-		activity: ["mysteries", "sleeping"],
-		description: ["hungry"]
+		name: "Beans",
+		gender: ["Boy", "Who Cares?"],
+		group: ["A group of dogs", "A group of humans"],
+		activity: ["Solving mysteries", "Sleeping/cuddling"],
+		desc: ["Hungry"]
 	},{
-		name: "babka",
-		gender: ["boy", "neutral"],
-		group: ["dogs", "humans"],
-		activity: ["sleeping"],
-		description: ["hungry", "diva"]
+		name: "Babka",
+		gender: ["Boy", "Who Cares?"],
+		group: ["A group of dogs", "A group of humans"],
+		activity: ["Sleeping/cuddling"],
+		desc: ["Hungry", "Diva"]
 	},{
-		name: "soda",
-		gender: ["boy", "girl", "neutral"],
-		group: ["dogs", "cats", "humans"],
-		activity: ["running"],
-		description: ["energetic", "hungry"]
+		name: "Soda",
+		gender: ["Boy", "Girl", "Who Cares?"],
+		group: ["A group of dogs", "A group of cats", "A group of humans"],
+		activity: ["Running endlessly"],
+		desc: ["Energetic", "Hungry"]
 	},{
-		name: "thomas",
-		gender: ["boy"],
-		group: ["humans"],
-		activity: ["mysteries", "sleeping"],
-		description: ["energetic", "diva"]
+		name: "Thomas",
+		gender: ["Boy"],
+		group: ["A group of humans"],
+		activity: ["Solving mysteries", "Sleeping/cuddling"],
+		desc: ["Energetic", "Diva"]
 	},{
-		name: "lucky",
-		gender: ["boy", "girl", "neutral"],
-		group: ["dogs", "cats", "humans"],
-		activity: ["running", "mysteries", "sleeping"],
-		description: ["energetic", "hungry"]
+		name: "Lucky",
+		gender: ["Boy", "Girl", "Who Cares?"],
+		group: ["A group of dogs", "A group of cats", "A group of humans"],
+		activity: ["Running endlessly", "Solving mysteries", "Sleeping/cuddling"],
+		desc: ["Energetic", "Hungry"]
 	},{
-		name: "lucy",
-		gender: ["girl"],
-		group: ["humans"],
-		activity: ["running", "mysteries", "sleeping"],
-		description: ["energetic", "diva"]
+		name: "Lucy",
+		gender: ["Girl"],
+		group: ["A group of humans"],
+		activity: ["Running endlessly", "Solving mysteries", "Sleeping/cuddling"],
+		desc: ["Energetic", "Diva"]
 	},{
-		name: "trenchcoat",
-		gender: ["boy", "neutral"],
-		group: ["dogs"],
-		activity: ["sleeping"],
-		description: ["hungry"]
+		name: "Trenchcoat",
+		gender: ["Boy", "Who Cares?"],
+		group: ["A group of dogs"],
+		activity: ["Sleeping/cuddling"],
+		desc: ["Hungry"]
 	},{
-		name: "wednesday",
-		gender: ["boy", "girl", "neutral"],
-		group: ["dogs", "cats", "humans"],
-		activity: ["running", "mysteries", "sleeping"],
-		description: ["energetic", "hungry", "diva"]
+		name: "Wednesday",
+		gender: ["Boy", "Girl", "Who Cares?"],
+		group: ["A group of dogs", "A group of cats", "A group of humans"],
+		activity: ["Running endlessly", "Solving mysteries", "Sleeping/cuddling"],
+		desc: ["Energetic", "Hungry", "Diva"]
 	},{
-		name: "jello",
-		gender: ["boy", "girl", "neutral"],
-		group: ["dogs", "humans"],
-		activity: ["mysteries", "sleeping"],
-		description: ["energetic", "hungry"]
+		name: "Jello",
+		gender: ["Boy", "Girl", "Who Cares?"],
+		group: ["A group of dogs", "A group of humans"],
+		activity: ["Solving mysteries", "Sleeping/cuddling"],
+		desc: ["Energetic", "Hungry"]
 	},{
-		name: "ash",
-		gender: ["boy", "neutral"],
-		group: ["dogs", "cats", "humans"],
-		activity: ["running", "mysteries", "sleeping"],
-		description: ["energetic"]
+		name: "Ash",
+		gender: ["Boy", "Who Cares?"],
+		group: ["A group of dogs", "A group of cats", "A group of humans"],
+		activity: ["Running endlessly", "Solving mysteries", "Sleeping/cuddling"],
+		desc: ["Energetic"]
 	},{
-		name: "baxter",
-		gender: ["boy", "neutral"],
-		group: ["dogs", "cats", "humans"],
-		activity: ["running", "mysteries"],
-		description: ["energetic", "diva"]
+		name: "Baxter",
+		gender: ["Boy", "Who Cares?"],
+		group: ["A group of dogs", "A group of cats", "A group of humans"],
+		activity: ["Running endlessly", "Solving mysteries"],
+		desc: ["Energetic", "Diva"]
 	},{
-		name: "crumpet",
-		gender: ["boy", "girl", "neutral"],
-		group: ["dogs", "cats", "humans"],
-		activity: ["mysteries", "sleeping"],
-		description: ["hungry", "diva"]
+		name: "Crumpet",
+		gender: ["Boy", "Girl", "Who Cares?"],
+		group: ["A group of dogs", "A group of cats", "A group of humans"],
+		activity: ["Solving mysteries", "Sleeping/cuddling"],
+		desc: ["Hungry", "Diva"]
 	},{
-		name: "kat",
-		gender: ["girl"],
-		group: ["cats", "humans"],
-		activity: ["mysteries", "sleeping"],
-		description: ["diva"]
+		name: "Kat",
+		gender: ["Girl"],
+		group: ["A group of cats", "A group of humans"],
+		activity: ["Solving mysteries", "Sleeping/cuddling"],
+		desc: ["Diva"]
 	},{
-		name: "linda",
-		gender: ["girl"],
-		group: ["dogs", "cats", "humans"],
-		activity: ["running", "sleeping"],
-		description: ["energetic", "diva"]
+		name: "Linda",
+		gender: ["Girl"],
+		group: ["A group of dogs", "A group of cats", "A group of humans"],
+		activity: ["Running endlessly", "Sleeping/cuddling"],
+		desc: ["Energetic", "Diva"]
 	},{
-		name: "lilia",
-		gender: ["girl"],
-		group: ["dogs", "cats", "humans"],
-		activity: ["running", "mysteries", "sleeping"],
-		description: ["energetic", "hungry", "diva"]
+		name: "Lilia",
+		gender: ["Girl"],
+		group: ["A group of dogs", "A group of cats", "A group of humans"],
+		activity: ["Running endlessly", "Solving mysteries", "Sleeping/cuddling"],
+		desc: ["Energetic", "Hungry", "Diva"]
 	},{
-		name: "chris",
-		gender: ["boy", "girl", "neutral"],
-		group: ["humans"],
-		activity: ["running", "mysteries", "sleeping"],
-		description: ["energetic", "hungry", "diva"]
+		name: "Chris",
+		gender: ["Boy", "Girl", "Who Cares?"],
+		group: ["A group of humans"],
+		activity: ["Running endlessly", "Solving mysteries", "Sleeping/cuddling"],
+		desc: ["Energetic", "Hungry", "Diva"]
 	},{
-		name: "cooper",
-		gender: ["boy", "girl", "neutral"],
-		group: ["dogs", "humans"],
-		activity: ["running", "mysteries", "sleeping"],
-		description: ["energetic", "hungry", "diva"]
+		name: "Cooper",
+		gender: ["Boy", "Girl", "Who Cares?"],
+		group: ["A group of dogs", "A group of humans"],
+		activity: ["Running endlessly", "Solving mysteries", "Sleeping/cuddling"],
+		desc: ["Energetic", "Hungry", "Diva"]
 	},{
-		name: "mindy",
-		gender: ["girl"],
-		group: ["cats", "humans"],
-		activity: ["running", "mysteries", "sleeping"],
-		description: ["energetic", "diva"]
+		name: "Mindy",
+		gender: ["Girl"],
+		group: ["A group of cats", "A group of humans"],
+		activity: ["Running endlessly", "Solving mysteries", "Sleeping/cuddling"],
+		desc: ["Energetic", "Diva"]
 	},
 
 ];

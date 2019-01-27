@@ -18,8 +18,8 @@ function init() {
 };
 
 function setupAnswers() {
-	// 
 	for (let i=0; i<answerButtons.length; i++) {
+		answerButtons[i].value = quiz[questionPosition]["answers"][i];
 		answerButtons[i].addEventListener("click", function() {
 			if(questionPosition < quiz.length-1) {
 				trackDogStats($(this));
@@ -28,71 +28,45 @@ function setupAnswers() {
 			} else {
 				trackDogStats($(this));
 				chooseName();
-				dogNameDisplay.classList.remove('hide');
-				dogNameResult.textContent = dogName;
-				surveyDisplay.classList.add("hide");
-				generateAgain.classList.remove("hide");
+				endQuiz();
 			};
 		});
 	};
 };
 
+function endQuiz() {
+	dogNameResult.textContent = dogName;
+	dogNameDisplay.classList.toggle('hide');
+	surveyDisplay.classList.toggle("hide");
+	generateAgain.classList.toggle("hide");
+};
+
 function nextQuestion() {
 	questionPosition++;
 	questionDisplay.textContent = quiz[questionPosition]["question"];
-}
+};
 
 function newAnswers() {
 	for (let i=0; i<answerButtons.length; i++) {
-	answerButtons[i].textContent = quiz[questionPosition]["answers"][i];
-	// answerButtons[i].value (is it value or name attribute?)
+		answerButtons[i].textContent = quiz[questionPosition]["answers"][i];
+		answerButtons[i].value = quiz[questionPosition]["answers"][i];
 	};
 };
 
 function trackDogStats(clickedButton) {
 	let val = clickedButton.val();
-	
-// I can do a ton to simplify this - (hint: the value is a string by default, i think i'm doing extra work to turn it into a number)
-// potentially a switch statement or Object.keys
-	if (questionPosition === 0) {
-		if (Number(val) === 1) {
-			dogStats.gender = "boy";
-		} else if (Number(val) === 2) {
-			dogStats.gender = "girl";
-		} else if (Number(val) === 3) {
-			dogStats.gender = "neutral";
-		}
-	} else if (questionPosition === 1) {
-		if (Number(val) === 1) {
-			dogStats.group = "dogs";
-		} else if (Number(val) === 2) {
-			dogStats.group = "cats";
-		} else if (Number(val) === 3) {
-			dogStats.group = "humans";
-		}
-	}  else if (questionPosition === 2) {
-		if (Number(val) === 1) {
-			dogStats.activity = "running";
-		} else if (Number(val) === 2) {
-			dogStats.activity = "mysteries";
-		} else if (Number(val) === 3) {
-			dogStats.activity = "sleeping";
-		}
-	} else if (questionPosition === 3) {
-		if (Number(val) === 1) {
-			dogStats.description = "energetic";
-		} else if (Number(val) === 2) {
-			dogStats.description = "hungry";
-		} else if (Number(val) === 3) {
-			dogStats.description = "diva";
-		}
-	};
+    if (questionPosition === 0) {
+		dogStats.gender = val;
+    } else if (questionPosition === 1) {
+		dogStats.group = val;
+    } else if (questionPosition === 2) {
+		dogStats.activity = val;
+    } else if (questionPosition === 3) {
+		dogStats.desc = val;
+	}
 };
 
-
 function chooseName() {
-	//good opp for git - experiment with versioning
-	// look up options for nesting loops
 	newArr = [];
 	for (let i=0; i<dogNameList.length; i++) {
 		for (let j=0; j<dogNameList[i].gender.length; j++) {
@@ -101,8 +75,8 @@ function chooseName() {
 					if (dogStats.group === dogNameList[i].group[k]) {
 						for (let l=0; l<dogNameList[i].activity.length; l++) {
 							if (dogStats.activity === dogNameList[i].activity[l]) {
-								for (let k=0; k<dogNameList[i].group.length; k++) {
-									if (dogStats.group === dogNameList[i].group[k]) {
+								for (let k=0; k<dogNameList[i].desc.length; k++) {
+									if (dogStats.desc === dogNameList[i].desc[k]) {
 										newArr.push(dogNameList[i].name);
 									}
 								}
@@ -119,18 +93,15 @@ function chooseName() {
 };
 
 function reset() {
-	questionDisplay.textContent = quiz[0]["question"];
-	for (let i=0; i<answerButtons.length; i++) {
-		answerButtons[i].textContent = quiz[0]["answers"][i];
-	}
-	dogName = "";
 	questionPosition = 0;
+	dogName = "";
 	dogStats = {};
+	questionDisplay.textContent = quiz[0]["question"];
+	newAnswers();
 	surveyDisplay.classList.remove("hide");
 	generateAgain.classList.add("hide");
 	dogNameDisplay.classList.add('hide');
 };
-
 
 generateButton.addEventListener('click', function() {
 	reset();

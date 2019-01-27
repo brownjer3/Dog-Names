@@ -3,6 +3,7 @@ enhancements
 - make it pure js - ($(this))
 - uppercase the first letter in the dog name
 - ability to have different amount of answers
+- refactor the nested loops
 
 
 git
