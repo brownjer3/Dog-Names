@@ -1,10 +1,12 @@
 enhancements
 
-- make it pure js - ($(this)) [DONE]
+- remove instances of jQuery to make it pure js - ($(this)) [DONE]
 - uppercase the first letter in the dog name [DONE]
 - ability to have different amount of answers
 - refactor functions [DONE] 
-	- still need to investigate if there's a better alternative to the nested For loops
+	- still need to investigate alternatives for the nested For loops
+- add option for user to go back a question
+- connect to database
 
 
 Practice git
