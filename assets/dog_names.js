@@ -22,11 +22,11 @@ function setupAnswers() {
 		answerButtons[i].value = quiz[questionPosition]["answers"][i];
 		answerButtons[i].addEventListener("click", function() {
 			if(questionPosition < quiz.length-1) {
-				trackDogStats($(this));
+				trackDogStats(this);
 				nextQuestion();
 				newAnswers();
 			} else {
-				trackDogStats($(this));
+				trackDogStats(this);
 				chooseName();
 				endQuiz();
 			};
@@ -54,7 +54,7 @@ function newAnswers() {
 };
 
 function trackDogStats(clickedButton) {
-	let val = clickedButton.val();
+	let val = clickedButton.value;
     if (questionPosition === 0) {
 		dogStats.gender = val;
     } else if (questionPosition === 1) {

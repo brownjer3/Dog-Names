@@ -1,12 +1,13 @@
 enhancements
 
-- make it pure js - ($(this))
-- uppercase the first letter in the dog name
+- make it pure js - ($(this)) [DONE]
+- uppercase the first letter in the dog name [DONE]
 - ability to have different amount of answers
-- refactor the nested loops
+- refactor functions [DONE] 
+	- still need to investigate if there's a better alternative to the nested For loops
 
 
-git
+Practice git
 - git init (how to start git in the project)
 - look up tutorials!!! 
 - git add, commit, and push 
